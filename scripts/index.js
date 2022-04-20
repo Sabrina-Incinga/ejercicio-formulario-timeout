@@ -24,6 +24,8 @@ const baseDeDatos = {
       name: "Patricia Lebsack",
       email: "julianne.oconner@kory.org",
       password: "MysuperPassword345",
+
+
     },
   ],
 };
@@ -41,7 +43,8 @@ function logIn(email, pass) {
     if(user.password == pass) {
       console.log(user);
   } else{
-    console.log("incorrect email or password");}
+    console.log("incorrect email or password");
+    console.log("hola") }
   }
 };
 
