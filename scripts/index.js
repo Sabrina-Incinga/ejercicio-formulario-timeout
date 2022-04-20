@@ -43,7 +43,8 @@ function logIn(email, pass) {
     if(user.password == pass) {
       console.log(user);
   } else{
-    console.log("incorrect email or password");}
+    console.log("incorrect email or password");
+    console.log("hola") }
   }
 };
 
