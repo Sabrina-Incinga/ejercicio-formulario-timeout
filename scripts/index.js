@@ -35,6 +35,16 @@ const baseDeDatos = {
 // 1) Escuchar el evento necesario para reaccionar cuando la persona
 // haga click en el botón iniciar sesión.
 
+function logIn(email, pass) {
+  const user = baseDeDatos.usuarios.find(user => user.email == email);
+  if(user != null){
+    if(user.password == pass) {
+      console.log(user);
+  } else{
+    console.log("incorrect email or password");}
+  }
+};
+
 // 2) El proceso de inicio de sesión deberá tener una demora de 3 segundos.
 // Deberás agregar la función correspondiente para simular dicha demora.
 
@@ -51,8 +61,8 @@ const baseDeDatos = {
 // 5) En caso de que los datos ingresados sean correctos, se deberá ocultar el formulario y mostrar
 // un mensaje de bienvenida al sitio.
 
-/* 
-TIPS:
+ 
+/* TIPS:
   - Puedes averiguar acerca de la manera de validar el formato de un email utilizando Javascript, buscando
     en internet frases como "Validar email con Javascript o similar".
 
@@ -66,5 +76,4 @@ TIPS:
 
    Mensaje de bienvenida => "<h1> Bienvenido al sitio 😀 </h1>";
 
-   ¡Manos a la obra!
- */
+¡Manos a la obra! */
